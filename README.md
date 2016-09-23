@@ -1,6 +1,11 @@
 # upgrade_gitlab-ce
 
 
+## Purpose
+In a multi-instnace GitLab Geo setup, when the version of the secondary node is ahead of that of the primary node, GitLab might fail to launch or fail to work properly.
+This repo is created to isolate (hold) the upgrade of package `gitlab-ce` from the upgrade of others, so to prevent the version of the secondary node is upgraded accidentally by other user's `apt-get upgrade`.
+It also provides a one-click script to unhold, upgrade, and hold `gitlab-ce` for the convenience of the administrators.
+
 ## Description
 
 The provided scripts are used to isolate GitLab upgrade from the upgrades of other packages.
