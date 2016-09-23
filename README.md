@@ -16,6 +16,7 @@ To setup, execute:
 
 ```
 This will do two things: 
+
 1. Create a symlink `/usr/local/bin/upgrade_gitlab-ce` pointing to `upgrade_gitlab-ce`
 2. Set gitlab-ce package held
 
